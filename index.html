@@ -1,20 +1,39 @@
-<html>
-    <head>
-        <link href="jogodavelha.css" rel="stylesheet" type="text/css"  />
-    </head>
-  <body>
-    <h1>Jogo da velha</h1>
-    <div id="board">
-      <div class="casinha"></div>
-      <div class="casinha gray"></div>
-      <div class="casinha"></div>
-      <div class="casinha gray"></div>
-      <div class="casinha"></div>
-      <div class="casinha gray"></div>
-      <div class="casinha"></div>
-      <div class="casinha gray"></div>
-      <div class="casinha"></div>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link href="jogodavelha.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    <div id="player-names">
+        <div>
+            <label for="player1">Jogador 1 (X):</label>
+            <input type="text" id="player1" placeholder="Nome do Jogador 1">
+        </div>
+        <div>
+            <label for="player2">Jogador 2 (O):</label>
+            <input type="text" id="player2" placeholder="Nome do Jogador 2">
+        </div>
+        <button id="start">Iniciar Jogo</button>
     </div>
-     <script type="text/javascript" src="jogodavelha.js"></script>
+    <div id="board" class="hidden">
+        <div class="casinha"></div>
+        <div class="casinha"></div>
+        <div class="casinha"></div>
+        <div class="casinha"></div>
+        <div class="casinha"></div>
+        <div class="casinha"></div>
+        <div class="casinha"></div>
+        <div class="casinha"></div>
+        <div class="casinha"></div>
+    </div>
+    <div id="vencedor"></div>
+    <button id="reset" class="hidden">Reiniciar</button>
+    <h2>Últimos Vencedores:</h2>
+    <ul id="history"></ul>
+    <script src="jogodavelha.js"></script>
 </body>
 </html>
